@@ -15,8 +15,11 @@
         <script src="assets/js/bootstrap.bundle.min.js"></script>
     </head>
     <body>
-        <h1>Hello World!</h1>
-        <button class="btn btn-info">test</button>
+
+        <form action="UserController" method="POST">
+            <input type="text" name="user"/>
+            <button class="btn btn-success" type="submit">Enviar</button>
+        </form>
         <script>
             $(document).ready(function () {
                 alert("bem-vindo!")
