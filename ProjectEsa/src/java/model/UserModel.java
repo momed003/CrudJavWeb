@@ -1,4 +1,3 @@
-
 package model;
 
 import java.sql.Timestamp;
@@ -8,12 +7,13 @@ import java.sql.Timestamp;
  * @author yassimin
  */
 public class UserModel {
+
     private int id;
     private String username;
-      private String email;
-        private Timestamp created_at;
-        private Timestamp updated_at;
-        private Timestamp deleted_at;
+    private String email;
+    private Timestamp created_at;
+    private Timestamp updated_at;
+    private Timestamp deleted_at;
 
     public int getId() {
         return id;
@@ -67,5 +67,5 @@ public class UserModel {
     public String toString() {
         return "UserModel{" + "id=" + id + ", username=" + username + ", email=" + email + ", created_at=" + created_at + ", updated_at=" + updated_at + ", deleted_at=" + deleted_at + '}';
     }
-   
+
 }

@@ -12,11 +12,12 @@ import model.UserModel;
  * @author user
  */
 public class UserTest {
+
     public static void main(String[] args) {
-       UserDao userDao=new UserDao();
-    for(UserModel user : userDao.getAllUsers()){
+        UserDao userDao = new UserDao();
+        for (UserModel user : userDao.getAllUsers()) {
             System.out.println(user.toString());
-     } 
+        }
     }
-    
+
 }
