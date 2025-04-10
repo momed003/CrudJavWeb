@@ -15,6 +15,17 @@ public class UserTest {
 
     public static void main(String[] args) {
         UserDao userDao = new UserDao();
+        UserModel userModel=new UserModel();
+        
+        userModel.setUsername("Albano Joao");
+        userModel.setEmail("dajuas@gmail.com");
+     boolean result= userDao.createUser(userModel);
+     
+        if (result) {
+            System.out.println("resultado: "+result);
+        }else{
+            System.out.println("Erro: nao foi possivel add user");
+        }
         for (UserModel user : userDao.getAllUsers()) {
             System.out.println(user.toString());
         }

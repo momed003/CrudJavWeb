@@ -1,0 +1,41 @@
+
+/* 
+    Created on : Apr 10, 2025, 7:42:51 AM
+    Author     : yassimin
+*/
+
+a{
+    text-decoration: none;
+}
+nav{
+    width: 100%;
+        background-color: brown;
+        box-shadow: 1px;
+        
+}
+nav ul li{
+    display: inline-block;
+    padding:15px;
+    
+}
+nav ul li a{
+    color:floralwhite;
+    transition: 0.2s;
+    
+}
+nav ul li a:hover{
+    color: white;
+    cursor: pointer;
+}
+nav ul li a h5{
+    color: oldlace
+}
+nav ul li span{
+     color:white ;
+     padding:5px;
+     border-radius: 40px
+}
+nav ul li span:hover{
+     background-color: white;
+     color: brown;
+}

@@ -20,7 +20,8 @@ public class UserDao {
         PreparedStatement ps;
         ResultSet rs;
         String querySelectSql = "select * from users";
-        List userList = new ArrayList();
+        // List userList = new ArrayList();
+        List<UserModel> userList = new ArrayList();
 
         try {
             firsConnection = com.getConnection();
@@ -44,6 +45,26 @@ public class UserDao {
             com.disconnetConnecttion();
         }
         return userList;
+
+    }
+
+    public boolean createUser(UserModel user) {
+        conection connection = new conection();
+        Connection com = connection.getConnection();
+
+        PreparedStatement ps;
+
+        try {
+            String sqlQuery = "insert into users(username, email) values (?,?)";
+            ps = com.prepareStatement(sqlQuery);
+            ps.setString(1, user.getUsername());
+            ps.setString(2, user.getEmail());
+            ps.execute();
+        } catch (SQLException e) {
+            System.out.println(e.getCause());
+            return false;
+        }
+        return true;
 
     }
 }

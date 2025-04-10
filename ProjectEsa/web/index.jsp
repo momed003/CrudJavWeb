@@ -12,18 +12,23 @@
         <title>Crud Page</title>
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <script src="assets/js/jquery-3.7.1.js"></script>
+        <link href="assets/css/main.css" rel="stylesheet" type="text/css"/>
+        <script src="main.js" type="text/javascript"></script>
         <script src="assets/js/bootstrap.bundle.min.js"></script>
     </head>
     <body>
 
-        <form action="UserController" method="POST">
-            <input type="text" name="user"/>
-            <button class="btn btn-success" type="submit">Enviar</button>
-        </form>
-        <script>
-            $(document).ready(function () {
-                alert("bem-vindo!")
-            });
-        </script>
+        <nav>
+            <ul>
+                <li><h5>Crud MVC</h5></li>
+                <li><a href="index.jsp">Pag.Inicial</a></li>
+                <li><span id="btnUsers">Utilizadores</span></li>
+            </ul>
+
+        </nav>
+
+        <div class="container table_users mt-5">
+            
+        </div>
     </body>
 </html>
